@@ -23,7 +23,10 @@ const Contact = () => {
                         <input type="email" name="email" id="email" placeholder="email" autoComplete="off" required />
                         <label for="message">message</label>
                         <textarea name="message" id="message" placeholder="message" autoComplete="off" required />
-                        <button type="submit">SEND MESSAGE</button>
+                        <div>
+                            <button type="submit">SEND MESSAGE</button>
+                        </div>
+
                     </form>
                 </div>
             </div>
