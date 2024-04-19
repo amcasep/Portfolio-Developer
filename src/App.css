@@ -190,6 +190,23 @@ p {
   color: #707070;
 }
 
+.sectionTextWrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+
+}
+
+.sextionText {
+  background: -webkit-linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+
+}
+
 /************************* HEADER *******************************/
 
 .header {
@@ -246,6 +263,10 @@ p {
 }
 
 /************************* PROJECTS *******************************/
+.projects p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
 
 .portfolioProjects {
   margin: 0 0 100px 0;
@@ -320,6 +341,7 @@ p {
   margin: 0 auto;
   text-align: center;
   width: 80%;
+
 }
 
 .portfolioProjects ul {
@@ -366,7 +388,7 @@ p {
 
 /************************* TOOLKIT *******************************/
 .toolkit {
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
 .toolkitContainer {
@@ -375,7 +397,6 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 80%;
 }
 
 .toolkitContainer ul {
@@ -384,8 +405,8 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
-  width: 90%;
   margin: 50px auto 100px auto;
+  width: 100%;
 }
 
 .toolkitContainer li {
@@ -394,18 +415,42 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(95, 95, 95);
+  color: rgb(138, 138, 138);
 }
 
-/* .toolkitContainer .bigger {
-  font-size: 5rem;
-}
-.toolkitContainer .smaller {
-  margin: -10px 0;
-} */
 .toolkitContainer p {
   font-size: 1rem;
   margin: 10px 0;
+}
+
+/************************* CV *******************************/
+.cv {
+  margin-bottom: 50px;
+}
+.buttonsCV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttonsCV button {
+  font-size: 0.8rem;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 15px;
+  color:rgb(138, 138, 138);
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttonsCV button:hover {
+  background: linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
+  color: white;
+  border: 2px solid white;
 }
 
 /************************* CONTACT *******************************/

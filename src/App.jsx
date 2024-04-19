@@ -7,6 +7,8 @@ import Contact from './Components/Contact'
 import Toolkit from './Components/Toolkit'
 
 import Projects from './Components/Projects'
+import AboutMe from './Components/AboutMe'
+import CV from './Components/CV'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <Header />
       <Projects />
       <Toolkit />
+      <AboutMe />
+      <CV/>
       <Contact />
       <Footer />
     </>

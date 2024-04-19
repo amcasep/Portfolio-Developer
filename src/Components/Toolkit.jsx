@@ -11,13 +11,18 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobeindesign } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+
 const Toolkit = () => {
     return (
-        <div className="toolkit">
+        <div className="toolkit wrapper">
+            <div className="sectionTextWrapper">
+                <h1 className="sextionText">My Toolkit</h1>
+                <h1>💻</h1>
+            </div>
             <div className="toolkitContainer">
-                <h1>My Toolkit 💻</h1>
                 <ul>
-                   
                     <li><IoLogoJavascript /><p>JavaScriptp</p></li>
                     <li><FaReact /><p>React</p></li>
                     <li><FaNodeJs /><p>Node.js</p></li>
@@ -27,15 +32,14 @@ const Toolkit = () => {
                     <li><FaCss3Alt /><p>CSS</p></li>
                     <li><SiTailwindcss /><p>Tailwind</p></li>
                     <li><FaSass /><p>Sass</p></li>
-                    <li className="bigger"><DiResponsive /><p className="smaller">Responsive</p></li>
+                    <li><FaBootstrap /><p>Bootstrap</p></li>
+                    <li><DiResponsive /><p>Responsive</p></li>
                     <li><SiAdobephotoshop /><p>Photoshop</p></li>
                     <li><SiAdobeillustrator /><p>Illustrator</p></li>
                     <li><SiAdobeindesign /><p>InDesign</p></li>
-                    
+                    <li><SiPostman /><p>Postman</p></li>
                 </ul>
             </div>
-
-
         </div>
     );
 }
