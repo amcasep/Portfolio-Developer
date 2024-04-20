@@ -9,6 +9,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [notification, setNotification] = useState(null);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -31,6 +32,12 @@ const Contact = () => {
             setName('');
             setEmail('');
             setMessage('');
+             // Set notification message
+             setNotification('Message sent successfully!');
+             // Clear notification after some time
+             setTimeout(() => {
+                 setNotification(null);
+             }, 3000); // Clear notification after 3 seconds
         })
         .catch((error) => {
             console.error('Error sending email:', error);
@@ -43,6 +50,7 @@ const Contact = () => {
                 <h1 className="title">Contact</h1>
                 <h1>🙋‍♀️</h1>
             </div>
+            
             <form onSubmit={handleSubmit} className="contactForm">
                 <div className="group">
                     <input
@@ -86,7 +94,9 @@ const Contact = () => {
                     <button type="submit">SEND MESSAGE <HiOutlinePaperAirplane className="icon" /></button>
                 </div>
             </form>
+            {notification && <div className="notification">{notification}</div>}
         </div>
+        
     );
 }
 
