@@ -50,7 +50,6 @@ const Contact = () => {
                 <h1 className="title">Contact</h1>
                 <h1>🙋‍♀️</h1>
             </div>
-            
             <form onSubmit={handleSubmit} className="contactForm">
                 <div className="group">
                     <input
@@ -96,7 +95,6 @@ const Contact = () => {
             </form>
             {notification && <div className="notification">{notification}</div>}
         </div>
-        
     );
 }
 
