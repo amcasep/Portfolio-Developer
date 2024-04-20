@@ -563,7 +563,7 @@ textarea:focus~.bar:before {
   justify-content: center;
   align-items: center;  
   gap: 50px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 .socialMediaLinks a {
   color: rgb(138, 138, 138);

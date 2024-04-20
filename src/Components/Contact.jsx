@@ -1,13 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-
+import emailjs from '@emailjs/browser';
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
 
 
 const Contact = () => {
-
-
-    const API_URL = import.meta.env.VITE_JSON_SERVER_API_URL;
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -16,22 +13,28 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const data = {
-            name,
-            email,
-            message
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message,
         };
 
-        axios.post(`${API_URL}/messages`, data)
-            .then(response => {
-                console.log(response);
-                setName('');
-                setEmail('');
-                setMessage('');
-            })
-            .catch(error => {
-                console.log(error);
-            });
+        emailjs.send(
+            'service_0a2h2ek',
+            'template_gfsrpvi',
+            templateParams,
+            '9-ZVnV8Sck9ZkcqzA'
+        )
+        .then((response) => {
+            console.log('Email sent!', response);
+            // Clear form fields after successful submission
+            setName('');
+            setEmail('');
+            setMessage('');
+        })
+        .catch((error) => {
+            console.error('Error sending email:', error);
+        });
     };
 
     return (
@@ -41,7 +44,6 @@ const Contact = () => {
                 <h1>🙋‍♀️</h1>
             </div>
             <form onSubmit={handleSubmit} className="contactForm">
-                {/* <input type="hidden" name="form-name" value="contact" /> */}
                 <div className="group">
                     <input
                         type="text"
@@ -54,6 +56,7 @@ const Contact = () => {
                     />
                     <span className="bar"></span>
                     <label>name</label>
+                    {/* <div className="error-txt">Required</div> */}
                 </div>
                 <div className="group">
                     <input
@@ -83,10 +86,6 @@ const Contact = () => {
                     <button type="submit">SEND MESSAGE <HiOutlinePaperAirplane className="icon" /></button>
                 </div>
             </form>
-  
-                  
-         
-         
         </div>
     );
 }
