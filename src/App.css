@@ -194,17 +194,44 @@ p {
   display: flex;
   gap: 20px;
   justify-content: center;
-
-
 }
 
-.sextionText {
+.title {
   background: -webkit-linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
+}
 
+a {
+  text-decoration: none;
+}
+
+button {
+  font-size: 0.9rem;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 15px 20px 15px 20px;
+  color: rgb(138, 138, 138);
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button:hover {
+  background: linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
+  color: white;
+  border: 2px solid white;
+}
+
+.icon {
+  font-size: 1.3rem;
 }
 
 /************************* HEADER *******************************/
@@ -425,8 +452,9 @@ p {
 
 /************************* CV *******************************/
 .cv {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
+
 .buttonsCV {
   display: flex;
   align-items: center;
@@ -434,115 +462,90 @@ p {
   gap: 20px;
 }
 
-.buttonsCV button {
-  font-size: 0.8rem;
-  border: 2px solid rgb(138, 138, 138);
-  border-radius: 50px;
-  text-transform: uppercase;
-  padding: 15px;
-  color:rgb(138, 138, 138);
-  font-weight: bold;
-  background: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.buttonsCV button:hover {
-  background: linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
-  color: white;
-  border: 2px solid white;
-}
-
 /************************* CONTACT *******************************/
 .contact {
-  background-color: #fff7f7;
-  padding: 100px 0 70px 0;
-  height: auto;
-
+  margin-bottom: 70px;
 }
-
-.contactContainer {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.contactInformation {
-  width: 30%;
-  margin-right: 10%;
-}
-
-.contact h2 {
-  color: #e96269;
-  font-size: 2rem;
-}
-
-.contact p {
-  padding-top: 20px;
-  line-height: 1.6;
-}
-
-.socialMediaLinks {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 16px 0;
-  font-size: 1.6rem;
-}
-
-.socialMediaLinks a {
-  color: #e96269;
-}
-
-
-
 .contactForm {
-  width: 60%;
-}
-
-.contactForm form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contactForm label {
-  display: none;
+.group {
+  position: relative;
+  margin: 45px 0;
 }
 
-.contactForm input,
 textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 3px solid #ffd5d5;
-  border-radius: 5px;
+  resize: none;
 }
 
-.contactForm textarea {
-  height: 200px;
+.contact input,
+textarea {
+  background: none;
+  color: #333333;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #333333;
+  font-family: "Karla", sans-serif;
 }
 
-.contactForm button {
-  background-color: #ff7171;
-  border: 2px solid #ff7171;
-  padding: 10px 15px;
-  margin: 10px 0;
-  width: auto;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
-.contactForm button:hover {
-  background-color: white;
-  color: #ff7171;
-  border: 2px solid #ffd5d5
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top: -14px;
+  font-size: 12px;
+  color: #333333;
+}
+
+input:focus~.bar:before,
+textarea:focus~.bar:before {
+  width: 320px;
+}
+
+/* .bar {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #333333;
+} */
+.bar:before {
+  content: "";
+  height: 3px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: linear-gradient(-45deg, #a4c6fa 0%, #e3b8ff 100%);
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.contact label {
+  color: #969696;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
 }
 
 /************************* FOOTER *******************************/
-.footer {
+/* .footer {
   position: relative;
   bottom: 0px;
   margin: 0 auto;
@@ -551,4 +554,21 @@ textarea {
   text-align: center;
   color: white;
   font-size: 1.15rem;
+} */
+.footer  {
+  text-align: center;
+}
+.socialMediaLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 50px;
+margin-bottom: 20px;
+}
+.socialMediaLinks a {
+  color: rgb(138, 138, 138);
+  font-size: 2.2rem
+}
+.footer p {
+  font-size: 1rem;
 }

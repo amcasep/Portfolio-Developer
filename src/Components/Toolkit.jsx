@@ -18,7 +18,7 @@ const Toolkit = () => {
     return (
         <div className="toolkit wrapper">
             <div className="sectionTextWrapper">
-                <h1 className="sextionText">My Toolkit</h1>
+                <h1 className="title">My Toolkit</h1>
                 <h1>💻</h1>
             </div>
             <div className="toolkitContainer">

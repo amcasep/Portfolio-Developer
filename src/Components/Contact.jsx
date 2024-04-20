@@ -1,35 +1,92 @@
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-const Contact = () => {
-    return (
-        <div className="contact">
-            <div className="contactContainer">
-                <div className="contactInformation">
-                    <h2>Let's Connect! 💌</h2>
-                    <p>You can find me on LinkedIn or Github
-                        or you can send me a message here!
-                        Feel free to reach out and say hello :)</p>
-                    <ul className="socialMediaLinks">
-                        <li><a href=""><FaLinkedinIn /></a></li>
-                        <li><a href=""><FaGithub /></a></li>
-                    </ul>
-                </div>
-                <div className="contactForm">
-                    <form action="thanks" method="POST" name="contact">
-                        <input type="hidden" name="form-name" value={"contact"} />
-                        <label for="name">name</label>
-                        <input type="text" name="name" id="name" placeholder="name" autoComplete="off" required />
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email" placeholder="email" autoComplete="off" required />
-                        <label for="message">message</label>
-                        <textarea name="message" id="message" placeholder="message" autoComplete="off" required />
-                        <div>
-                            <button type="submit">SEND MESSAGE</button>
-                        </div>
+import { useState } from "react";
+import axios from "axios";
 
-                    </form>
-                </div>
+import { HiOutlinePaperAirplane } from "react-icons/hi2";
+
+
+const Contact = () => {
+
+
+    const API_URL = import.meta.env.VITE_JSON_SERVER_API_URL;
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const data = {
+            name,
+            email,
+            message
+        };
+
+        axios.post(`${API_URL}/messages`, data)
+            .then(response => {
+                console.log(response);
+                setName('');
+                setEmail('');
+                setMessage('');
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    };
+
+    return (
+        <div className="contact wrapper">
+            <div className="sectionTextWrapper">
+                <h1 className="title">Contact</h1>
+                <h1>🙋‍♀️</h1>
             </div>
+            <form onSubmit={handleSubmit} className="contactForm">
+                {/* <input type="hidden" name="form-name" value="contact" /> */}
+                <div className="group">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autoComplete="off"
+                        value={name}
+                        onChange={(event) => setName(event.target.value)}
+                        required
+                    />
+                    <span className="bar"></span>
+                    <label>name</label>
+                </div>
+                <div className="group">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autoComplete="off"
+                        value={email} onChange={(event) => setEmail(event.target.value)}
+                        required
+                    />
+                    <span className="bar"></span>
+                    <label>email</label>
+                </div>
+                <div className="group">
+                    <textarea
+                        name="message"
+                        id="message"
+                        autoComplete="off"
+                        rows={5}
+                        value={message} onChange={(event) => setMessage(event.target.value)}
+                        required
+                    />
+                    <span className="bar"></span>
+                    <label>message</label>
+                </div>
+                <div>
+                    <button type="submit">SEND MESSAGE <HiOutlinePaperAirplane className="icon" /></button>
+                </div>
+            </form>
+  
+                  
+         
+         
         </div>
     );
 }
