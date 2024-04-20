@@ -35,13 +35,13 @@ const CV = () => {
                 <h1>📄</h1>
             </div>
             <div className="buttonsCV">
-                <Link href="./AmparoCabezuelo-Lebenslauf.pdf" target="_blank">
-                    <button onClick={() => { window.open('./AmparoCabezuelo-Lebenslauf.pdf', '_blank'); }}>VIEW CV <HiOutlineDocumentMagnifyingGlass  className='icon'/></button>
+                <Link to="./AmparoCabezuelo-Lebenslauf.pdf" target="_blank">
+                    <button >VIEW CV <HiOutlineDocumentMagnifyingGlass  className='icon'/></button>
                     </Link>
                 <button onClick={handleDownload}>DOWNLOAD CV <HiOutlineDocumentArrowDown className='icon'/></button>
                 
             </div>
-
+            {/* onClick={() => { window.open('./AmparoCabezuelo-Lebenslauf.pdf', '_blank'); }} */}
         </div>
     );
 }

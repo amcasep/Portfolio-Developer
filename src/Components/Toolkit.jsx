@@ -12,8 +12,8 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobeindesign } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-
+// import { FaBootstrap } from "react-icons/fa";
+import { IoCubeSharp } from "react-icons/io5";
 const Toolkit = () => {
     return (
         <div className="toolkit wrapper">
@@ -32,12 +32,14 @@ const Toolkit = () => {
                     <li><FaCss3Alt /><p>CSS</p></li>
                     <li><SiTailwindcss /><p>Tailwind</p></li>
                     <li><FaSass /><p>Sass</p></li>
-                    <li><FaBootstrap /><p>Bootstrap</p></li>
+                    {/* <li><FaBootstrap /><p>Bootstrap</p></li> */}
                     <li><DiResponsive /><p>Responsive</p></li>
+                    <li><SiPostman /><p>Postman</p></li>
                     <li><SiAdobephotoshop /><p>Photoshop</p></li>
                     <li><SiAdobeillustrator /><p>Illustrator</p></li>
                     <li><SiAdobeindesign /><p>InDesign</p></li>
-                    <li><SiPostman /><p>Postman</p></li>
+                    <li><IoCubeSharp /><p>3D Modeling</p></li>
+                    
                 </ul>
             </div>
         </div>
