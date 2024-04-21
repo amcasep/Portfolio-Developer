@@ -5,9 +5,9 @@ const NavBar = () => {
 
                 <input type="checkbox" id="active" />
                 <label for="active" className="menu-btn"><span></span></label>
-                <label for="active" className="close"></label>
+                {/* <label for="active" className="close"></label> */}
 
-                <div className="wrapper2">
+                <div className="dropdownMenu">
                     <ul>
                         <li> <a href="#projects" className="link"><span>Projects</span></a></li>
                         <li> <a href="#aboutme" className="link"><span>About Me</span></a></li>
