@@ -26,10 +26,8 @@ const CV = () => {
     };
 
     return (
-
-
         
-        <div className="cv wrapper">
+        <div className="cv wrapper" id='cv'>
             <div className="sectionTextWrapper">
                 <h1 className='title'>Curriculum Vitae</h1>
                 <h1>📄</h1>

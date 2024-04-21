@@ -4,7 +4,8 @@
 
 /************************* NAVBAR *******************************/
 .navBar input {
-  display: none;
+  /* display: none; */
+  z-index: 1000;
 }
 
 .navBar {
@@ -110,7 +111,7 @@
 .dropdownMenu ul {
   position: absolute;
   top: 80%;
-  left: 40%;
+  left: 44%;
   height: 90%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -138,7 +139,13 @@
 .dropdownMenu ul li a:hover {
   color: #744792;
 }
-
+.close {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: background .6s;
+}
 /************************* WRAPPER *******************************/
 .wrapper {
   width: 90%;
@@ -260,7 +267,7 @@ button:hover {
 }
 
 .portfolioProjects {
-  margin: 0 0 100px 0;
+  margin: 50px 0 100px 0;
   overflow: hidden;
 }
 

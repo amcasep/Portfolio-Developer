@@ -12,7 +12,7 @@ const Projects = () => {
                 <h1 className="title">Current Projects</h1>
                 <h1>🛠️</h1>
             </div>
-            <p>hover over any project to learn more!</p>
+            {/* <p>hover over any project to learn more!</p> */}
             <section className="portfolioProjects" id="projects">
                 <div className="firstRow">
                     <div className="portfolioOne">

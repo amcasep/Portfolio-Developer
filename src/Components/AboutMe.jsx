@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return (
-        <div className="aboutMe wrapper">
+        <div className="aboutMe wrapper" id="aboutme">
             <div className="sectionTextWrapper">
                 <h1 className="title">About Me</h1>
                 <h1>🚀</h1>
