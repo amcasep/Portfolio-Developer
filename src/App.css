@@ -273,6 +273,7 @@ button:hover {
   padding-top: 90vh;
   font-size: 50px;
   animation: moveUpDown 2s infinite;
+  cursor: pointer;
 }
 
 @keyframes moveUpDown {

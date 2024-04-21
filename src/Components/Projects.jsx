@@ -7,7 +7,7 @@ import img5 from "../assets/p5.png"
 const Projects = () => {
 
     return (
-        <div className="projects wrapper">
+        <div className="projects wrapper" id="projects">
             <div className="sectionTextWrapper">
                 <h1 className="title">Current Projects</h1>
                 <h1>🛠️</h1>

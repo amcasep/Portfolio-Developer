@@ -2,6 +2,10 @@ import img from "../assets/profPic.png"
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
+    const handleScrollToProjects = () => {
+        const projectsSection = document.getElementById('projects');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
 
         <div className="header wrapper">
@@ -14,7 +18,7 @@ const Header = () => {
                 <img src={img} alt="profile picture" />
             </div>
             <div className="arrowDown">
-                <MdKeyboardArrowDown />
+                <MdKeyboardArrowDown  onClick={handleScrollToProjects}/>
             </div>
         </div>
 
