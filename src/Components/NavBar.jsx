@@ -20,6 +20,7 @@ const NavBar = () => {
                     <ul>
                         <li> <a href="#projects" className="link" onClick={handleLinkClick}><span>Projects</span></a></li>
                         <li> <a href="#aboutme" className="link" onClick={handleLinkClick}><span>About Me</span></a></li>
+                        <li> <a href="#contact" className="link" onClick={handleLinkClick}><span>Contact</span></a></li>
                         {/* <li> <a href="#cv" className="link"><span>Curriculum Vitae</span></a></li> */}
                     </ul>
                 </div>
