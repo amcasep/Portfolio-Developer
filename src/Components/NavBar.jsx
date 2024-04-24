@@ -1,3 +1,6 @@
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 const NavBar = () => {
     const handleLinkClick = (event, targetId) => {
         // Close the dropdown menu
@@ -21,10 +24,8 @@ const NavBar = () => {
                     </ul>
                 </div>
             </nav>
-            <div class="portfolio-like">
-                <a href="#" class="like-icon">
-                    <img src="github-logo.png" alt="GitHub Logo" />
-                </a>
+            <div class="socialIcon">
+                <a href="https://github.com/amcasep" target="_blank" rel="noopener noreferrer" class="socialIconLink"><p>Github</p><FaGithub /></a>
             </div>
         </>
     );
