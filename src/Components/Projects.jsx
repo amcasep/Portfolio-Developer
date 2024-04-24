@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <div className="projects wrapper" id="projects">
             <div className="sectionTextWrapper">
-                <h1 className="title">Current Projects</h1>
+                <h1 className="title">Latest Projects</h1>
                 <h1>🛠️</h1>
             </div>
             {/* <p>hover over any project to learn more!</p> */}

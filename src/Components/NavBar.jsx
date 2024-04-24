@@ -11,7 +11,7 @@ const NavBar = () => {
 
                 <input type="checkbox" id="active" />
                 <label for="active" className="menu-btn"><span></span></label>
-                <label for="active" className="close"></label>
+                {/* <label for="active" className="close"></label> */}
 
                 <div className="dropdownMenu">
                     <ul>
@@ -20,8 +20,12 @@ const NavBar = () => {
                         {/* <li> <a href="#cv" className="link"><span>Curriculum Vitae</span></a></li> */}
                     </ul>
                 </div>
-
             </nav>
+            <div class="portfolio-like">
+                <a href="#" class="like-icon">
+                    <img src="github-logo.png" alt="GitHub Logo" />
+                </a>
+            </div>
         </>
     );
 }

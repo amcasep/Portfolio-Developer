@@ -4,7 +4,7 @@
 
 /************************* NAVBAR *******************************/
 .navBar input {
-  /* display: none; */
+  display: none;
   z-index: 1000;
 }
 
@@ -139,13 +139,13 @@
 .dropdownMenu ul li a:hover {
   color: #744792;
 }
-.close {
+/* .close {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
 	transition: background .6s;
-}
+} */
 /************************* WRAPPER *******************************/
 .wrapper {
   width: 90%;
@@ -154,9 +154,9 @@
 }
 
 p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  font-weight: 450;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 250;
   color: #707070;
 }
 
@@ -180,7 +180,7 @@ a {
 
 button {
   font-size: 0.9rem;
-  border: 2px solid rgb(138, 138, 138);
+  border: 2px solid rgb(155, 155, 155);
   border-radius: 50px;
   text-transform: uppercase;
   padding: 15px 20px 15px 20px;
@@ -209,35 +209,52 @@ button:hover {
 .header {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.imageContainer {
-  width: 80%;
-  max-width: 230px;
-}
-
-.imageContainer img {
-  width: 100%;
-}
-
 .headerText {
   width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 70%;
 }
-
+.hi {
+  margin-bottom: -10px;
+  /* background: -webkit-linear-gradient(#a4c6fa 0%, #e3b8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-weight: 800;
+  /* color: #dc92ff; */
+  color: #b9b9b9;
+}
 .headerText h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin: 10px 0;
-  color: #efddfb;
-  width: 90%;
+  background: -webkit-linear-gradient(#a4c6fa 0%, #e3b8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -20px;
+  color: #808080;
 }
-
-.headerText span {
-  color: #efddfb;
+.headerText h2 {
+  color: #808080;
+  font-size: 3.94rem;
+  background: -webkit-linear-gradient(#a4c6fa 0%, #e3b8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.7;
 }
-
+/* .headerText p {
+  color: #000;
+} */
+.headerText button {
+  margin-top: 20px;
+}
 .arrowDown {
   position: absolute;
   padding-top: 90vh;
@@ -419,6 +436,18 @@ button:hover {
 .toolkitContainer p {
   font-size: 1rem;
   margin: 10px 0;
+}
+/************************* ABOUT ME *******************************/
+.aboutmeContainer {
+  display: flex;
+}
+.imageContainer {
+  width: 80%;
+  max-width: 230px;
+}
+
+.imageContainer img {
+  width: 100%;
 }
 
 /************************* CV *******************************/
