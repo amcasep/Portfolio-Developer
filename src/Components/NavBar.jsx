@@ -17,7 +17,7 @@ const NavBar = () => {
                 {/* <label for="active" className="close"></label> */}
 
                 <div className="dropdownMenu">
-                    <ul>
+                    <ul >
                         <li> <a href="#projects" className="link" onClick={handleLinkClick}><span>Projects</span></a></li>
                         <li> <a href="#aboutme" className="link" onClick={handleLinkClick}><span>About Me</span></a></li>
                         <li> <a href="#contact" className="link" onClick={handleLinkClick}><span>Contact</span></a></li>

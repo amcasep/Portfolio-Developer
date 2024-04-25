@@ -109,31 +109,25 @@
 }
 
 .dropdownMenu ul {
-  position: absolute;
-  top: 80%;
-  left: 44%;
-  height: 90%;
-  transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 130px;
   width: 100%;
-}
-
-.dropdownMenu ul li {
-  height: 10%;
-  margin: 15px 0;
 }
 
 .dropdownMenu ul li a {
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
-  padding: 5px 30px;
   color: #fff;
   position: absolute;
-  line-height: 50px;
-  margin: 5px 30px;
   transition: all 0.5s ease;
+  margin-left: -65px;
+  margin-top: 250px;
 }
 
 .dropdownMenu ul li a:hover {
@@ -559,6 +553,11 @@ button:hover {
 .toolkitContainer p {
   font-size: 1rem;
   margin: 10px 0;
+}
+@media (max-width: 576px) {
+  .toolkitContainer li {
+    font-size: 2rem;
+  }
 }
 /************************* ABOUT ME *******************************/
 .aboutMe {
