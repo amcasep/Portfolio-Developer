@@ -179,6 +179,11 @@
 .socialIconLink p {
   color: white;
 }
+@media (max-width: 576px) {
+  .socialIcon {
+    display: none;
+  }
+}
 /************************* WRAPPER *******************************/
 .wrapper {
   width: 90%;
@@ -236,7 +241,15 @@ button:hover {
 .icon {
   font-size: 1.3rem;
 }
-
+@media (max-width: 576px) {
+  button {
+    font-size: 0.7rem;
+    padding: 10px 15px 10px 15px;
+  }
+  .icon {
+    font-size: 1rem;
+  }
+}
 /************************* HEADER *******************************/
 
 .header {
@@ -251,7 +264,10 @@ button:hover {
   width: 100%;
   text-align: justify;
   text-justify: inter-word;
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hi {
   margin-bottom: -10px;
@@ -275,16 +291,16 @@ button:hover {
 }
 .headerText h2 {
   color: #808080;
-  font-size: 3.94rem;
+  font-size: 2.95rem;
   background: -webkit-linear-gradient(#7dacf3 0%, #bc64f7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.7;
 }
-/* .headerText p {
-  color: #000;
-} */
+.headerText p {
+  max-width: 563px;
+}
 .headerText button {
   margin-top: 20px;
 }
@@ -309,7 +325,37 @@ button:hover {
     transform: translateY(0);
   }
 }
-
+@media (max-width: 768px) {
+  .headerText h1 {
+    font-size: 3rem;
+  }
+  .headerText h2{
+    font-size: 2.2rem;
+  }
+  .headerText p {
+    max-width: 424px;
+  }
+}
+@media (max-width: 576px) {
+  .headerText {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .headerText h1 {
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  .headerText h2 {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .headerText p {
+    max-width: 300px;
+    font-size: 0.92rem;
+  }
+}
 /************************* PROJECTS *******************************/
 /* .projects p {
   margin-bottom: 10px;
