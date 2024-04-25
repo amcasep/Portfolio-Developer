@@ -27,26 +27,26 @@ const Toolkit = () => {
                 <h1 className="title">My Toolkit</h1>
                 <h1>💻</h1>
             </div>
-            <div className="toolkitContainer">
-                <ul>
-                    <li><IoLogoJavascript /><p>JavaScriptp</p></li>
-                    <li><FaReact /><p>React</p></li>
-                    <li><FaNodeJs /><p>Node.js</p></li>
-                    <li><SiExpress /><p>Express.js</p></li>
-                    <li><BiLogoMongodb /><p>MongoDB</p></li>
-                    <li><AiOutlineHtml5 /><p>HTML</p></li>
-                    <li><FaCss3Alt /><p>CSS</p></li>
-                    <li><SiTailwindcss /><p>Tailwind</p></li>
-                    <li><FaSass /><p>Sass</p></li>
-                    <li><DiResponsive /><p>Responsive</p></li>
-                    <li><SiPostman /><p>Postman</p></li>
-                    <li><SiAdobephotoshop /><p>Photoshop</p></li>
-                    <li><SiAdobeillustrator /><p>Illustrator</p></li>
-                    <li><SiAdobeindesign /><p>InDesign</p></li>
-                    <li><IoCubeSharp /><p>3D Modeling</p></li>
-                    
-                </ul>
-            </div>
+
+            <ul className="toolkitContainer">
+                <li><IoLogoJavascript /><p>JavaScriptp</p></li>
+                <li><FaReact /><p>React</p></li>
+                <li><FaNodeJs /><p>Node.js</p></li>
+                <li><SiExpress /><p>Express.js</p></li>
+                <li><BiLogoMongodb /><p>MongoDB</p></li>
+                <li><AiOutlineHtml5 /><p>HTML</p></li>
+                <li><FaCss3Alt /><p>CSS</p></li>
+                <li><SiTailwindcss /><p>Tailwind</p></li>
+                <li><FaSass /><p>Sass</p></li>
+                <li><DiResponsive /><p>Responsive</p></li>
+                <li><SiPostman /><p>Postman</p></li>
+                <li><SiAdobephotoshop /><p>Photoshop</p></li>
+                <li><SiAdobeillustrator /><p>Illustrator</p></li>
+                <li><SiAdobeindesign /><p>InDesign</p></li>
+                <li><IoCubeSharp /><p>3D Modeling</p></li>
+
+            </ul>
+
         </div>
     );
 }
