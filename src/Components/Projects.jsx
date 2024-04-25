@@ -1,6 +1,8 @@
 import img1 from "../assets/p1.png"
 import img2 from "../assets/p2.png"
+import img22 from "../assets/p22.png"
 import img3 from "../assets/p3.png"
+import img33 from "../assets/p33.png"
 import img4 from "../assets/p4.png"
 import img5 from "../assets/p5.png"
 import Aos from 'aos';
@@ -37,7 +39,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="portfolioTwo" data-aos="fade-left" data-aos-once="true">
-                        <img src={img2} alt="" />
+                        <img src={img22} alt="" />
                         <div className="overlayTwo">
                             <h3>Pika-shoot!</h3>
                             <p>A game about avoiding obstacles, collecting Pokéballs and shooting enemies</p>
@@ -54,7 +56,7 @@ const Projects = () => {
                 </div>
                 <div className="secondRow" >
                     <div className="portfolioThree" data-aos="fade-right" data-aos-once="true">
-                        <img src={img3} alt="" />
+                        <img src={img33} alt="" />
                         <div className="overlayThree">
                             <h3>WanderWorld</h3>
                             <p>React app that displays information about destinations around the world incl. weather</p>

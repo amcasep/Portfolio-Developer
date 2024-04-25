@@ -344,7 +344,18 @@ button:hover {
   align-items: center;
   position: relative;
 }
-
+.portfolioOne {
+  width: 60%;
+}
+.portfolioTwo {
+  width: 40%;
+}
+.portfolioThree {
+  width: 40%;
+}
+.portfolioFour {
+  width: 60%;
+}
 .portfolioProjects img {
   height: 100%;
   object-fit: contain;
