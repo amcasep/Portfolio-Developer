@@ -479,14 +479,30 @@ button:hover {
 .aboutmeContainer {
   display: flex;
   margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.aboutmeContainer p {
+font-size: 1rem;
+}
+.tex {
+ /* max-width: 60%; */
+ text-align: justify;
+}
+.aboutmeContainer span {
+  font-weight: 500;
+  color: #000;
 }
 .imageContainer {
-  width: 80%;
-  max-width: 230px;
+  /* width: 80%; */
+  max-width: 250px;
 }
 
 .imageContainer img {
   width: 100%;
+  border-radius: 20px;
+  /* height: 100%; */
 }
 
 /************************* CV *******************************/

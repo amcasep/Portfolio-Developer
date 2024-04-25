@@ -13,9 +13,16 @@ import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobeindesign } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { IoCubeSharp } from "react-icons/io5";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
 const Toolkit = () => {
+    useEffect(() => {
+        Aos.init({ duration: 400 })
+    }, [])
     return (
-        <div className="toolkit wrapper">
+        <div className="toolkit wrapper" data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className="title">My Toolkit</h1>
                 <h1>💻</h1>

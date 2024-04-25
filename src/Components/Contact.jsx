@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import emailjs from '@emailjs/browser';
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Contact = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 400 })
+    }, [])
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -26,26 +31,26 @@ const Contact = () => {
             templateParams,
             '9-ZVnV8Sck9ZkcqzA'
         )
-        .then((response) => {
-            console.log('Email sent!', response);
-            // Clear form fields after successful submission
-            setName('');
-            setEmail('');
-            setMessage('');
-             // Set notification message
-             setNotification('Message sent successfully!');
-             // Clear notification after some time
-             setTimeout(() => {
-                 setNotification(null);
-             }, 3000); // Clear notification after 3 seconds
-        })
-        .catch((error) => {
-            console.error('Error sending email:', error);
-        });
+            .then((response) => {
+                console.log('Email sent!', response);
+                // Clear form fields after successful submission
+                setName('');
+                setEmail('');
+                setMessage('');
+                // Set notification message
+                setNotification('Message sent successfully!');
+                // Clear notification after some time
+                setTimeout(() => {
+                    setNotification(null);
+                }, 3000); // Clear notification after 3 seconds
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+            });
     };
 
     return (
-        <div className="contact wrapper" id="contact">
+        <div className="contact wrapper" id="contact" data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className="title">Contact</h1>
                 <h1>🙋‍♀️</h1>

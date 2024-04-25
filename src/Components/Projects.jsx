@@ -3,9 +3,14 @@ import img2 from "../assets/p2.png"
 import img3 from "../assets/p3.png"
 import img4 from "../assets/p4.png"
 import img5 from "../assets/p5.png"
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const Projects = () => {
-
+    useEffect(() => {
+        Aos.init({ duration: 400 })
+    }, [])
     return (
         <div className="projects wrapper" id="projects">
             <div className="sectionTextWrapper">
@@ -15,7 +20,7 @@ const Projects = () => {
             {/* <p>hover over any project to learn more!</p> */}
             <section className="portfolioProjects" id="projects">
                 <div className="firstRow">
-                    <div className="portfolioOne">
+                    <div className="portfolioOne" data-aos="fade-right" data-aos-once="true">
                         <img src={img1} alt="" />
                         <div className="overlayOne">
                             <h3>Architecture Portfolio</h3>
@@ -31,7 +36,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="portfolioTwo">
+                    <div className="portfolioTwo" data-aos="fade-left" data-aos-once="true">
                         <img src={img2} alt="" />
                         <div className="overlayTwo">
                             <h3>Pika-shoot!</h3>
@@ -48,7 +53,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="secondRow" >
-                    <div className="portfolioThree">
+                    <div className="portfolioThree" data-aos="fade-right" data-aos-once="true">
                         <img src={img3} alt="" />
                         <div className="overlayThree">
                             <h3>WanderWorld</h3>
@@ -66,7 +71,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="portfolioFour">
+                    <div className="portfolioFour" data-aos="fade-left" data-aos-once="true">
                         <img src={img5} alt="" />
                         <div className="overlayFour">
                             <h3>PlantiePie</h3>

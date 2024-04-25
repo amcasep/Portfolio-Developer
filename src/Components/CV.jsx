@@ -3,9 +3,12 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from "react-router-dom"
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const CV = () => {
-
+    useEffect(() => {
+        Aos.init({ duration: 400 })
+    }, [])
     const handleDownload = () => {
 
         const url = './AmparoCabezuelo-Lebenslauf.pdf';
@@ -27,7 +30,7 @@ const CV = () => {
 
     return (
         
-        <div className="cv wrapper" id='cv'>
+        <div className="cv wrapper" id='cv' data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className='title'>Curriculum Vitae</h1>
                 <h1>📄</h1>
