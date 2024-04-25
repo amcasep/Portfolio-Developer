@@ -592,7 +592,14 @@ font-size: 1rem;
   border-radius: 20px;
   /* height: 100%; */
 }
-
+@media (max-width: 576px) {
+  .aboutmeContainer {
+    flex-direction: column;
+  }
+  .aboutmeContainer p {
+    max-width: 260px;
+  }
+}
 /************************* CV *******************************/
 .cv {
 margin-top: 200px;
