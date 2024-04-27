@@ -14,6 +14,7 @@ import { SiAdobeindesign } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 // import { IoCubeSharp } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -43,6 +44,7 @@ const Toolkit = () => {
                 <li><DiResponsive /><p>Responsive</p></li>
                 <li><SiTypescript /><p>Typescript</p></li>
                 <li><SiPostman /><p>Postman</p></li>
+                <li><FaGitAlt /><p>Git</p></li>
                 <li><SiAdobephotoshop /><p>Photoshop</p></li>
                 <li><SiAdobeillustrator /><p>Illustrator</p></li>
                 <li><SiAdobeindesign /><p>InDesign</p></li>
