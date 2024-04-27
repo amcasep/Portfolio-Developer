@@ -13,6 +13,8 @@ import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobeindesign } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { IoCubeSharp } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
@@ -39,6 +41,7 @@ const Toolkit = () => {
                 <li><SiTailwindcss /><p>Tailwind</p></li>
                 <li><FaSass /><p>Sass</p></li>
                 <li><DiResponsive /><p>Responsive</p></li>
+                <li><SiTypescript /><p>Typescript</p></li>
                 <li><SiPostman /><p>Postman</p></li>
                 <li><SiAdobephotoshop /><p>Photoshop</p></li>
                 <li><SiAdobeillustrator /><p>Illustrator</p></li>
