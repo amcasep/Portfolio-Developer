@@ -42,7 +42,8 @@ const Projects = () => {
                         <img src={img22} alt="" />
                         <div className="overlayTwo">
                             <h3>Pika-shoot!</h3>
-                            <p>A game about avoiding obstacles, collecting Pokéballs and shooting enemies</p>
+                            <p>A game about avoiding obstacles, collecting Pokéballs and shooting enemies. <br />
+                            Not adapted to be displayed on mobile devices.</p>
                             <ul>
                                 <li>CSS</li>
                                 <li>JS</li>
