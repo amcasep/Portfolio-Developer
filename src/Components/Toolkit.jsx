@@ -12,7 +12,7 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobeindesign } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
-import { IoCubeSharp } from "react-icons/io5";
+// import { IoCubeSharp } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 
 import Aos from 'aos';
@@ -46,7 +46,7 @@ const Toolkit = () => {
                 <li><SiAdobephotoshop /><p>Photoshop</p></li>
                 <li><SiAdobeillustrator /><p>Illustrator</p></li>
                 <li><SiAdobeindesign /><p>InDesign</p></li>
-                <li><IoCubeSharp /><p>3D Modeling</p></li>
+                {/* <li><IoCubeSharp /><p>3D Modeling</p></li> */}
 
             </ul>
 
