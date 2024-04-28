@@ -13,12 +13,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+ 
 }
+
+
+ /* span.darkmode {
+  color: white;
+}
+.menu-btn span.darkmode,
+.menu-btn:before.darkmode,
+.menu-btn:after.darkmode  {
+  border-bottom: 4px solid #ffffff;
+}  */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  
 }
 body {
   margin: 0;
@@ -33,4 +45,19 @@ body {
   position: relative;
   overflow-x: hidden;
   width: 100vw;
+  --border-color: rgb(0, 0, 0);
 }
+
+body.dark-mode {
+  background-color: #171717;
+  color: white;
+  --border-color: rgb(255, 255, 255);
+}
+
+body.dark-mode span{
+  color: white;
+}
+body.dark-mode p {
+  color: rgb(255, 255, 255);
+}
+

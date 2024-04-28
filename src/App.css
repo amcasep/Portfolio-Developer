@@ -3,6 +3,7 @@
 }
 
 /************************* NAVBAR *******************************/
+
 .navBar input {
   display: none;
   z-index: 1000;
@@ -14,7 +15,19 @@
   z-index: 1000;
   width: 100%;
 }
-
+.toggleMode {
+  position: absolute;
+  left:40px;
+  top: -20px;
+  font-size: 1rem;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.toggleMode p {
+  font-size: 0.8rem;
+}
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -37,7 +50,7 @@
   content: "";
   position: absolute;
   width: 45%;
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid var(--border-color);
   transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s ease;
   border-radius: 2px;
 }
