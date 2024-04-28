@@ -53,7 +53,7 @@ const Contact = () => {
         <div className="contact wrapper" id="contact" data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className="title">Contact</h1>
-                <h1>🙋‍♀️</h1>
+                {/* <h1>🙋‍♀️</h1> */}
             </div>
             <form onSubmit={handleSubmit} className="contactForm">
                 <div className="group">

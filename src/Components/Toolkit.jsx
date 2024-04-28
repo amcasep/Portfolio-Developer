@@ -28,7 +28,7 @@ const Toolkit = () => {
         <div className="toolkit wrapper" data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className="title">My Toolkit</h1>
-                <h1>💻</h1>
+                {/* <h1>💻</h1> */}
             </div>
 
             <ul className="toolkitContainer">

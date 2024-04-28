@@ -33,7 +33,7 @@ const CV = () => {
         <div className="cv wrapper" id='cv' data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className='title'>Curriculum Vitae</h1>
-                <h1>📄</h1>
+                {/* <h1>📄</h1> */}
             </div>
             <div className="buttonsCV">
                 <Link to="./AmparoCabezuelo-Lebenslauf.pdf" target="_blank">

@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="aboutMe wrapper" id="aboutme" data-aos='fade-up' data-aos-once="true">
             <div className="sectionTextWrapper">
                 <h1 className="title">About Me</h1>
-                <h1>🚀</h1>
+                {/* <h1>🚀</h1> */}
             </div>
             <div className="aboutmeContainer">
                 <div className="tex">  <p> Originally from Spain, I am a <span>software developer</span> currently based in Germany with a background in architecture.
