@@ -28,6 +28,14 @@
 .toggleMode p {
   font-size: 0.8rem;
 }
+@media (max-width: 576px) {
+  .toggleMode p{
+    display: none;
+  }
+  .toggleMode {
+    left: 15px;
+  }
+}
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -42,7 +50,12 @@
   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 576px) {
+  .menu-btn {
+    right: 20px;
 
+  }
+}
 /* BURGUER MENU */
 .menu-btn span,
 .menu-btn:before,
@@ -352,7 +365,8 @@ button:hover {
   .headerText {
     align-items: flex-start;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 45px;
+    padding-right: 40px;
   }
   .headerText h1 {
   line-height: 1;
@@ -364,8 +378,8 @@ button:hover {
     margin-bottom: 10px;
   }
   .headerText p {
-    max-width: 300px;
-    font-size: 0.92rem;
+    max-width: 260px;
+    font-size: 0.88rem;
   }
 }
 /************************* PROJECTS *******************************/
