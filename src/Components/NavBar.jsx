@@ -60,8 +60,8 @@ const NavBar = () => {
                     </ul>
                 </div>
             </nav>
-            <div class="socialIcon">
-                <a href="https://github.com/amcasep" target="_blank" rel="noopener noreferrer" class="socialIconLink"><p>Github</p><FaGithub /></a>
+            <div className="socialIcon">
+                <a href="https://github.com/amcasep" target="_blank" rel="noopener noreferrer" className="socialIconLink"><p>Github</p><FaGithub /></a>
             </div>
         </>
     );
